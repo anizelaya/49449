@@ -12,7 +12,7 @@ Es un analizador que lee código escrito en un sub-lenguaje reducido de JavaScri
 La gramática está definida con ANTLR4 y el programa corre en Node.js.
 
 ### Árbol de derivación visual
-![Árbol de derivación] <img width="480" height="573" alt="image" src="https://github.com/user-attachments/assets/769b880b-091e-44cc-8a52-8a60ebe5aea3" />
+ <img width="480" height="573" alt="image" src="https://github.com/user-attachments/assets/769b880b-091e-44cc-8a52-8a60ebe5aea3" />
 
 
 ## Instalación
