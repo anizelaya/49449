@@ -14,7 +14,7 @@ async function main() {
         console.log("Archivo leído correctamente.\n");
     } catch (err) {
         input = await leerCadena();
-        console.log();
+        console.log(input);
     }
 
     // ── FASE 1: ANÁLISIS LÉXICO ──────────────────────────────────

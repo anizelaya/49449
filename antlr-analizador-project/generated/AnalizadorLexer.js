@@ -1,4 +1,4 @@
-// Generated from c:/Users/User/Desktop/analizador.49449/analizador49449/antlr-analizador-project/Analizador.g4 by ANTLR 4.13.2
+// Generated from c:/Users/User/Desktop/49449/antlr-analizador-project/Analizador.g4 by ANTLR 4.13.2
 // jshint ignore: start
 import antlr4 from 'antlr4';
 
