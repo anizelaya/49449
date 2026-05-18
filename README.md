@@ -1,5 +1,30 @@
-### Consigna asignada
+## Consigna asignada
 <img width="946" height="498" alt="image" src="https://github.com/user-attachments/assets/db5112b8-9d06-4f89-8464-4ec8be45ab40" />
+
+## ¿Qué hace este proyecto?
+
+Es un analizador que lee código escrito en un sub-lenguaje reducido de JavaScript y verifica si está bien escrito. Si la entrada es correcta, muestra:
+
+* Una tabla con los tokens reconocidos y su línea
+* El árbol de análisis sintáctico
+* Una evaluación semántica que ejecuta las asignaciones y los `console.log`
+
+La gramática está definida con ANTLR4 y el programa corre en Node.js.
+
+### Árbol de derivación visual
+![Árbol de derivación](ACÁ_VA_LA_CAPTURA)
+
+## Instalación
+
+Cloná el repositorio:
+```cmd
+git clone https://github.com/anizelaya/49449.git
+```
+
+Luego entrá a la carpeta del proyecto:
+```cmd
+cd 49449/antlr-analizador-project
+```
 
 ## Instrucciones de Uso
 
@@ -7,10 +32,6 @@
 - Node.js instalado
 
 ### Pasos para ejecutar
-
-**IMPORTANTE:** abrir la terminal dentro de la carpeta `antlr-analizador-project`, no desde la raíz del repositorio.
-
-En VS Code: clic derecho sobre la carpeta `antlr-analizador-project` → **"Abrir en terminal integrado"**
 
 **1. Instalar dependencias (solo la primera vez):**
 ```cmd
@@ -22,17 +43,21 @@ npm install
 node index.js
 ```
 
-### Cambiar el archivo de entrada
+### Archivo de entrada
 
-Para probar distintos inputs, modificar esta línea en `index.js`:
+El analizador lee por defecto el archivo `input.txt` de la raíz del repositorio. Para probar con otro código hay dos opciones:
+
+**Opción 1:** Editar directamente el archivo `input.txt` con el código que se quiera analizar.
+
+**Opción 2:** Modificar esta línea en `index.js` para usar los ejemplos propuestos:
 ```javascript
 input = fs.readFileSync('../input.txt', 'utf8');
 ```
 Reemplazar `'../input.txt'` por cualquiera de estos:
-- `'../input_correcto_1.txt'` — asignaciones y console.log
-- `'../input_correcto_2.txt'` — while con bloque
-- `'../input_incorrecto_1.txt'` — error léxico (carácter inválido `@`)
-- `'../input_incorrecto_2.txt'` — error sintáctico (tokens faltantes)
+- `'../input_correcto_1.txt'` — contiene asignaciones y console.log
+- `'../input_correcto_2.txt'` — contiene while con bloque
+- `'../input_incorrecto_1.txt'` — genera error léxico (carácter inválido `@`)
+- `'../input_incorrecto_2.txt'` — genera error sintáctico (tokens faltantes)
 
 ### Salida esperada
 

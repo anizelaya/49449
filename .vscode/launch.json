@@ -1,0 +1,14 @@
+{
+    "version": "2.4.7",
+    "configurations": [
+        {
+            "name": "Debug ANTLR4 grammar",
+            "type": "antlr-debug",
+            "request": "launch",
+            "input": "antlr-analizador-project/../input.txt",
+            "grammar": "antlr-analizador-project/Analizador.g4",
+            "printParseTree": true,
+            "visualParseTree": true
+        }
+    ]
+}
